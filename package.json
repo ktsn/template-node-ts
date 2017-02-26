@@ -1,0 +1,44 @@
+{
+  "name": "template-node-ts",
+  "version": "1.0.0",
+  "author": "katashin",
+  "private": true,
+  "description": "A project template for a Node.js library using TypeScript",
+  "keywords": [
+    "template",
+    "TypeScript",
+    "Node.js"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/ktsn/template-node-ts",
+  "bugs": "https://github.com/ktsn/template-node-ts/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktsn/template-node-ts.git"
+  },
+  "scripts": {
+    "prepublish": "npm run clean && npm run test && npm run build",
+    "clean": "rm -rf lib",
+    "build": "tsc -p src",
+    "dev": "npm run test:unit -- -w",
+    "lint": "tslint \"src/**/*.ts\" && tslint \"test/**/*.ts\"",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "mocha --compilers ts:espower-typescript/guess test/**/*.ts"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/power-assert": "0.0.28",
+    "espower-typescript": "^8.0.0",
+    "glob": "^7.1.0",
+    "power-assert": "^1.4.1",
+    "testem": "^1.12.0",
+    "tslint": "^4.0.0",
+    "tslint-config-ktsn": "^2.0.0",
+    "typescript": "^2.1.4"
+  }
+}
