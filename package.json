@@ -22,7 +22,7 @@
     "url": "https://github.com/ktsn/template-node-ts.git"
   },
   "scripts": {
-    "prepublish": "npm run clean && npm run test && npm run build",
+    "prepublishOnly": "npm run clean && npm run test && npm run build",
     "clean": "rm -rf lib",
     "build": "tsc -p src",
     "dev": "npm run test:unit -- -w",
