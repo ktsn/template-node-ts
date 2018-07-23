@@ -26,8 +26,8 @@
     "clean": "rm -rf lib",
     "build": "tsc -p src",
     "dev": "jest --watch",
-    "lint": "tslint -p . && prettier --list-different \"{src,scripts,test}/**/*.{js,ts}\"",
-    "format": "prettier --write \"{src,scripts,test}/**/*.{js,ts}\"",
+    "lint": "eslint --ext js,ts src test",
+    "lint:fix": "eslint --fix --ext js,ts src test",
     "test": "npm run lint && npm run test:unit",
     "test:unit": "jest"
   },
@@ -49,12 +49,12 @@
   },
   "devDependencies": {
     "@types/jest": "^22.2.2",
+    "eslint": "^5.2.0",
+    "eslint-config-ktsn-typescript": "^1.1.0",
     "jest": "^22.4.3",
     "prettier": "1.11.1",
+    "prettier-config-ktsn": "^1.0.0",
     "ts-jest": "^22.4.2",
-    "tslint": "^5.9.1",
-    "tslint-config-ktsn": "^2.1.0",
-    "tslint-config-prettier": "^1.10.0",
     "typescript": "^2.8.1"
   }
 }
