@@ -50,7 +50,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "eslint": "^5.3.0",
-    "eslint-config-ktsn-typescript": "^1.1.4",
+    "eslint-config-ktsn-typescript": "^2.0.0",
     "jest": "^23.5.0",
     "prettier": "1.18.2",
     "prettier-config-ktsn": "^1.0.0",
