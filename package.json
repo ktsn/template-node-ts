@@ -48,7 +48,7 @@
     }
   },
   "devDependencies": {
-    "@types/jest": "^24.0.18",
+    "@types/jest": "^25.1.0",
     "eslint": "^6.3.0",
     "eslint-config-ktsn-typescript": "^2.0.0",
     "jest": "^23.5.0",
