@@ -1,12 +1,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2018",
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": [
-      "esnext"
-    ],
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
