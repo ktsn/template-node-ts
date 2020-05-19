@@ -7,8 +7,6 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "declaration": true,
-    "sourceMap": true,
     "stripInternal": true
   },
   "include": [
