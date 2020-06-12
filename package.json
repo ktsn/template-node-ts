@@ -32,7 +32,7 @@
     "test:unit": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.3",
+    "@types/jest": "^26.0.0",
     "eslint": "^6.3.0",
     "eslint-config-ktsn-typescript": "^2.1.1",
     "jest": "^26.0.1",
